@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>API Project</title>
+
+  <!-- RESET -->
+  <link rel="stylesheet" href="vendor/reset/reset.css">
+
+  <!-- STYLING -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- INCLUDE JQUERY LOCALLY -->
+  <script src="vendor/jquery/jquery.js"></script>
+
+  <!-- INCLUDE LOCAL SCRIPT FILE -->
+  <script src="scripts/index.js"></script>
+
+</head>
+<body>
+
+<div class="flex-center">
+  <form id="search-form">
+    <div class="checkbox-container flex-column flex-wrap">
+      <span><input type="checkbox" name="Australia" value="au">Australia</span>
+      <span><input type="checkbox" name="Brazil" value="br">Brazil</span>
+      <span><input type="checkbox" name="Canada" value="ca">Canada</span>
+      <span><input type="checkbox" name="Denmark" value="dk">Denmark</span>
+      <span><input type="checkbox" name="France" value="fr">France</span>
+      <span><input type="checkbox" name="Germany" value="de">Germany</span>
+      <span><input type="checkbox" name="Great Britain" value="gb">Great Britain</span>
+      <span><input type="checkbox" name="Iran" value="ir">Iran</span>
+      <span><input type="checkbox" name="New Zealand" value="nz">New Zealand</span>
+      <span><input type="checkbox" name="Spain" value="es">Spain</span>
+      <span><input type="checkbox" name="Switzerland" value="ch">Switzerland</span>
+      <span><input type="checkbox" name="United States" value="us">United States</span>
+    </div>
+    <div class="search-container">
+      <p class="intro-text">Select the desired user countries.</p>
+      <p class="search-text hide"></p>
+      <input type="submit" value="Search">
+    </div>
+  </form>
+</div>
+
+<div class="users-container flex-center">
+</div>
+
+</body>
+</html>
