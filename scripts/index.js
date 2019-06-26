@@ -11,14 +11,17 @@ $(document).ready(function() {
 
 // capitalize all words in intro text sentence
 var $introText = 'Select the desired user countries.';
-var $words = $introText.split('');
-console.log($words);
+var $words = $introText.split(' ');
+var newArray = [];
 
-// $introText.forEach(function(words) {
-//   var wordFirstLetter = (word).charAt(0).toUpperCase();
-//   var wordNoFirstLetter = (word).slice(1);
-//   var word = wordFirstLetter + wordNoFirstLetter;
-// });
+$words.forEach(function(word) {
+  var wordFirstLetter = (word).charAt(0).toUpperCase();
+  var wordNoFirstLetter = (word).slice(1);
+  var wordFull = wordFirstLetter + wordNoFirstLetter;
+  newArray.push(wordFull);
+});
+var newText = newArray.join(' ');
+$('.intro-text').text(newText);
 
 // Create a user tile for each user returned by the API
   function init(users) {
